@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
-const Contact = require('./Contact');
-const AddressBook = require(`./AddressBook');`)
+import Contact from './Contact';
+import AddressBook from `./AddressBook`;
 
 const myAddressBook = new AddressBook();
 

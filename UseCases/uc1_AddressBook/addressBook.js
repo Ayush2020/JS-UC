@@ -1,4 +1,4 @@
-const Contact = require("./Contact");
+import Contact from "./Contact";
 
 class AddressBook{
     constructor(){
@@ -14,4 +14,4 @@ class AddressBook{
         console.log(`Contact deleted`)
     } 
 }
-module.exports = AddressBook;
+export default AddressBook;
