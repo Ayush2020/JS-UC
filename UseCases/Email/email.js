@@ -4,4 +4,4 @@ const validateEmail = (email) => {
   return emailRegex.test(email);
 };
 
-console.log("Email", "abc.xyz@bridgelabz.co.in is", `${validateEmail("abc.xyz@bridgelabz.co.inm") ? "valid" : "invalid"}`)
+console.log("Email", "abc.xyz@bridgelabz.co.in is", `${validateEmail("abc.xyz@bridgelabz.co.in") ? "valid" : "invalid"}`)
