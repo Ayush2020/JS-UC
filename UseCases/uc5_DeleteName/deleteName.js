@@ -13,7 +13,7 @@ class AddressBook{
     }
 
 
-    //u2
+    
     #validate(...args){
         let validateName = /^[A-Z]+[a-zA-Z]{2,}$/
         let validateAddress = /[A-Za-z0-9]{4,}/
@@ -35,13 +35,13 @@ class AddressBook{
     }
 }
 
-//uc-3
+
 let addressBooks = [];
 function addAddressBooks(addressBook){
     addressBooks.push(addressBook);
 }
 
-//uc-4
+
 function updateAddressBook(firstName, updateAddressBook){
     for(let addressBook of addressBooks){
         if(addressBook.firstName === firstName){
@@ -51,12 +51,11 @@ function updateAddressBook(firstName, updateAddressBook){
     }
 }
 
-//uc-5
 function deleteAddressBook(firstName){
     addAddressBooks = addressBooks.filter(addressBook => addressBook.firstName !== firstName);
 }
 
-//uc6
+
 function getNumberOfContacts(){
     return addressBooks.reduce((length,_) => length+1,0)
 }
